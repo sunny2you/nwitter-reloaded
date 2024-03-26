@@ -16,14 +16,16 @@ const router=createBrowserRouter([
     path:"/",
     element:
     <ProtectedRoute><Layout/></ProtectedRoute>,
+
     children:[
       {
         path:"",
-        element:<Home/>,
+        element:<Home key="home"/>,
+        
       },
       {
         path:"profile",
-        element:<Profile/>,
+        element:<Profile key="profile"/>,
       }
     ]
 
